@@ -1,6 +1,8 @@
 'use strict';
 let allCourses=[];
 let activeTab='outline';
+let topicNotes={};
+const topicList=items=>`<div class="topic-list">${items.map(t=>`<details class="topic-item"><summary>${escapeHTML(t)}<span aria-hidden="true">+</span></summary><p>${escapeHTML(topicNotes[t])}</p></details>`).join('')}</div>`;
 const escapeHTML=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const list=items=>`<ul class="topics">${items.map(x=>`<li>${escapeHTML(x)}</li>`).join('')}</ul>`;
 function current(){return allCourses.find(c=>c.slug===location.hash.slice(1))||allCourses.find(c=>c.title==='Python')||allCourses[0]}
@@ -21,8 +23,10 @@ function selectTab(tab){activeTab=tab;document.querySelectorAll('[data-tab]').fo
 function showPanel(c){
  let content='';
  if(activeTab==='outline'){
-  if(c.chapters)content=c.chapters.map(([title,topics],i)=>`<details class="chapter" open><summary class="chapter-heading"><span class="chapter-no">${c.title==='Python'?'CH '+String(i+1).padStart(2,'0'):String(i+1).padStart(2,'0')}</span><h3>${escapeHTML(title)}</h3></summary>${list(topics)}</details>`).join('');
-  else content=c.modules.map(([title,topics],i)=>`<details class="chapter" open><summary class="chapter-heading"><span class="chapter-no">${String(i+1).padStart(2,'0')}</span><h3>${escapeHTML(title)}</h3></summary><p class="section-lead">${escapeHTML(topics)}</p></details>`).join('');
+  content='<div class="section-intro"><h3>Your learning path</h3><p>Open a chapter or module to explore its topics. In Python and SQL, click a topic for a short explanation.</p></div>';
+
+  if(c.chapters)content+=c.chapters.map(([title,topics],i)=>`<details class="chapter"><summary class="chapter-heading"><span class="chapter-no">${c.title==='Python'?'CH '+String(i+1).padStart(2,'0'):String(i+1).padStart(2,'0')}</span><h3>${escapeHTML(title)}</h3></summary>${topicList(topics)}</details>`).join('');
+  else content+=c.modules.map(([title,topics],i)=>`<details class="chapter"><summary class="chapter-heading"><span class="chapter-no">${String(i+1).padStart(2,'0')}</span><h3>${escapeHTML(title)}</h3></summary><div class="module-description"><p>${escapeHTML(topics)}</p><p class="lab"><strong>Practical focus:</strong> ${escapeHTML(c.modules[i][2])}</p></div></details>`).join('');
   if(c.title==='SQL')content+='<p class="section-lead">Main lab dialect: T-SQL. CTAS support varies by platform; SQL Server labs use SELECT INTO where appropriate. Performance improvements are measured, rather than assumed.</p>';
  }else if(activeTab==='schedule'){
   content='<p class="section-lead">Two three-hour sessions per week, plus four to six hours of independent practice. Open a week to see topics and practical work.</p>'+c.modules.map(([title,topics,lab],i)=>`<details class="week" ${i===0?'open':''}><summary><span class="label">Week ${String(i+1).padStart(2,'0')}</span><strong>${escapeHTML(title)}</strong></summary><p>${escapeHTML(topics)}</p><p class="lab"><strong>Practical work:</strong> ${escapeHTML(lab)}</p></details>`).join('');
@@ -32,7 +36,7 @@ function showPanel(c){
  document.querySelector('#panel').innerHTML=content;
 }
 window.addEventListener('hashchange',()=>{activeTab='outline';render()});
-fetch('courses.json').then(r=>{if(!r.ok)throw Error('Unable to load course outlines');return r.json()}).then(data=>{allCourses=data;render()}).catch(()=>{document.querySelector('#course-content').innerHTML='<div class="error"><h2>Course outlines could not load</h2><p>Reload this page or download the Word handbook above.</p></div>'});
+Promise.all(['courses.json','topic-notes.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error('Unable to load course outlines');return r.json()}))).then(([data,notes])=>{allCourses=data;topicNotes=notes;render()}).catch(()=>{document.querySelector('#course-content').innerHTML='<div class="error"><h2>Course outlines could not load</h2><p>Reload this page or download the Word handbook above.</p></div>'});
 
 const categories=['Data & analytics','Programming','Data & analytics','Cloud & engineering','Cloud & engineering','Cloud & engineering','AI & machine learning','Certification'];
 function renderHome(){
