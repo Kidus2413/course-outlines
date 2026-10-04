@@ -1,0 +1,925 @@
+[
+  {
+    "title": "SQL",
+    "level": "Beginner to advanced",
+    "pre": "Basic computer literacy and spreadsheet familiarity. No previous programming required.",
+    "tools": "SQL Server Developer Edition or an institution-approved SQL sandbox; SQL Server Management Studio; Git.",
+    "desc": "Progress through beginner, intermediate, and advanced SQL skills, then apply them to a layered data warehouse and analytical projects. The course covers query design, reusable objects, performance analysis, and validated business reporting.",
+    "out": [
+      "Query and modify relational data using SELECT, DDL, DML, filtering, joins, and set operators.",
+      "Apply scalar, aggregate, CASE, NULL, and window functions to business analysis.",
+      "Choose subqueries, CTEs, views, temporary tables, procedures, and triggers for appropriate use cases.",
+      "Evaluate indexes, execution plans, partitioning, and optimization decisions; validate AI-assisted SQL.",
+      "Build Bronze, Silver, and Gold warehouse layers and deliver exploratory and advanced analytics."
+    ],
+    "cap": "SQL data warehouse and business analytics portfolio",
+    "deliver": "Submit source ingestion scripts, Bronze raw tables, Silver cleaned tables, a Gold dimensional model or analytical views, data quality checks, EDA queries, advanced analytics queries, and a README. Include an execution-plan comparison, a parameterized procedure, and a scoped trigger demonstration.",
+    "modules": [
+      [
+        "SQL foundations",
+        "Introduction to SQL, environment setup and querying data with SELECT.",
+        "Set up the database and produce basic business queries."
+      ],
+      [
+        "DDL and DML",
+        "CREATE, ALTER and DROP; INSERT, UPDATE and DELETE; constraints.",
+        "Create tables and demonstrate controlled data changes."
+      ],
+      [
+        "Filtering and joins",
+        "Filtering data, basic joins, unmatched rows and cardinality.",
+        "Combine customer and order records without inflating totals."
+      ],
+      [
+        "Advanced joins and sets",
+        "Advanced joins, anti/semi join patterns and set operators.",
+        "Compare populations and identify missing or duplicate records."
+      ],
+      [
+        "Scalar functions",
+        "SQL functions overview; string, numeric, date and time functions.",
+        "Standardize names, calculate values and validate date logic."
+      ],
+      [
+        "NULL and aggregation",
+        "NULL functions, CASE, aggregate functions and grouping.",
+        "Produce reconciled segmented KPIs with explicit missing-value rules."
+      ],
+      [
+        "Window functions",
+        "Window basics, aggregate, ranking and value functions; frames.",
+        "Calculate rankings, running totals and prior-period comparisons."
+      ],
+      [
+        "Midpoint practical",
+        "Beginner and intermediate skills; query validation and troubleshooting.",
+        "Complete an independent reporting and data-quality exercise."
+      ],
+      [
+        "Subqueries and CTEs",
+        "Advanced techniques, subqueries, common table expressions.",
+        "Refactor a multi-step query and verify equivalent results."
+      ],
+      [
+        "Views and intermediate tables",
+        "Views, CTAS, temporary tables and comparison of techniques.",
+        "Choose and implement a suitable intermediate-results strategy."
+      ],
+      [
+        "Procedures and triggers",
+        "Stored procedures, parameters, triggers and operational side effects.",
+        "Build a parameterized report and a narrowly scoped audit trigger."
+      ],
+      [
+        "Performance and AI",
+        "Indexes, execution plans, partitions, optimization tips; AI and SQL.",
+        "Compare plans, justify an optimization and validate an AI-suggested query."
+      ],
+      [
+        "Data warehouse Bronze",
+        "Warehouse architecture, source ingestion, raw preservation and lineage.",
+        "Build the Bronze layer and reconcile it with source files."
+      ],
+      [
+        "Data warehouse Silver",
+        "Cleaning, standardization, deduplication and quality checks.",
+        "Build the Silver layer with documented transformation rules."
+      ],
+      [
+        "Data warehouse Gold and EDA",
+        "Dimensional modeling, reporting views and exploratory data analysis.",
+        "Build Gold outputs and investigate distributions and anomalies."
+      ],
+      [
+        "Advanced analytics and defense",
+        "Customer and product segmentation, trends, cumulative metrics and handover.",
+        "Present advanced analytics backed by a validated warehouse."
+      ]
+    ],
+    "chapters": [
+      [
+        "Beginner Level",
+        [
+          "Introduction to SQL",
+          "Setting Up Your Environment",
+          "Querying Data with SELECT",
+          "DDL Commands",
+          "DML Commands"
+        ]
+      ],
+      [
+        "Intermediate Level",
+        [
+          "Filtering Data",
+          "SQL Joins Basics",
+          "Advanced SQL Joins",
+          "Set Operators",
+          "SQL Functions Overview",
+          "String Functions",
+          "Numeric Functions",
+          "Date and Time Functions",
+          "NULL Functions",
+          "CASE Statements",
+          "Aggregate Functions",
+          "Window Functions Basics",
+          "Window Aggregate Functions",
+          "Window Ranking Functions",
+          "Window Value Functions"
+        ]
+      ],
+      [
+        "Advanced Level",
+        [
+          "Advanced SQL Techniques",
+          "Subqueries",
+          "Common Table Expressions",
+          "Views",
+          "CTAS and Temporary Tables",
+          "Comparing Advanced SQL Techniques",
+          "Stored Procedures",
+          "Triggers",
+          "Indexes",
+          "Execution Plans",
+          "Partitions",
+          "SQL Performance Optimization Tips",
+          "AI and SQL"
+        ]
+      ],
+      [
+        "Projects",
+        [
+          "SQL Data Warehouse",
+          "Data Warehouse Bronze Layer",
+          "Data Warehouse Silver Layer",
+          "Data Warehouse Gold Layer",
+          "Exploratory Data Analysis",
+          "Advanced Data Analytics"
+        ]
+      ]
+    ],
+    "slug": "sql"
+  },
+  {
+    "title": "Python",
+    "level": "Beginner to intermediate",
+    "pre": "Basic computer literacy; comfort with files and folders.",
+    "tools": "Python 3.10 or later for match case; VS Code or another editor; standard library; optional Jupyter notebooks; Git.",
+    "desc": "Learn Python through eight chapters covering fundamentals, strings, numbers, logic, conditions, loops, data structures, and functions. The 16-week plan emphasizes independent programming, validation, and readable code.",
+    "out": [
+      "Explain Python execution and write programs using variables, input, and core data types.",
+      "Manipulate strings and numbers and implement decisions and loops.",
+      "Select and use lists, tuples, sets, and dictionaries appropriately.",
+      "Write clear functions with parameters and return values and validate program behavior."
+    ],
+    "cap": "Transaction management and analysis program",
+    "deliver": "Submit a menu-driven Python program using input validation, conditions, loops, lists or dictionaries, summary calculations, and reusable functions. Include source code, sample inputs and outputs, a functional test checklist, and a README.",
+    "modules": [
+      [
+        "Python Fundamentals",
+        "What Python is, execution, installation, comments and print().",
+        "Install Python and run a documented introductory script."
+      ],
+      [
+        "Variables and data types",
+        "Variables, user input(), core types, conversions and validation.",
+        "Build a user-input calculator with type and value checks."
+      ],
+      [
+        "String basics",
+        "String creation, transformations, indexing and slicing.",
+        "Extract and standardize fields from text records."
+      ],
+      [
+        "String validation",
+        "Search, validation methods, case conversion and edge cases.",
+        "Create a reusable set of text-cleaning operations."
+      ],
+      [
+        "Python Numbers",
+        "Integers, floats, math, rounding, random numbers and validation.",
+        "Build a numeric simulation and explain rounding choices."
+      ],
+      [
+        "Logic and operators",
+        "Booleans, comparison, logical, membership and identity operators.",
+        "Write and verify business-rule expressions; compare equality and identity."
+      ],
+      [
+        "Conditional statements",
+        "If, else, elif, nesting, advanced conditions, inline if and match case.",
+        "Build a rule-based classification program covering all decision branches."
+      ],
+      [
+        "Midpoint practical",
+        "Fundamentals, strings, numbers, operators and conditions.",
+        "Complete an independent input-validation and classification task."
+      ],
+      [
+        "Loop foundations",
+        "For loops, break, continue and pass.",
+        "Process a collection while handling skipped and invalid records."
+      ],
+      [
+        "Advanced loops",
+        "For else, nested for loops and while loops.",
+        "Build a menu-driven program and explain loop termination."
+      ],
+      [
+        "Lists and analysis",
+        "List overview, creation, access, unpacking and analysis.",
+        "Analyze a collection of transaction values."
+      ],
+      [
+        "List operations",
+        "Adding, removing, updating, sorting and combining lists.",
+        "Maintain a transaction list with validated updates."
+      ],
+      [
+        "Iterables and collections",
+        "Iterables, filtering, lambda, list comprehensions, tuples and sets.",
+        "Implement concise transformations and compare collection choices."
+      ],
+      [
+        "Dictionaries and functions",
+        "Dictionaries; functions introduction; parameters and return values.",
+        "Create a dictionary-backed application using reusable functions."
+      ],
+      [
+        "Clean functions and capstone",
+        "Function types, readable names, focused responsibilities and documentation.",
+        "Refactor the application into clean functions and test representative cases."
+      ],
+      [
+        "Capstone presentation",
+        "End-to-end execution, functional validation, documentation and defense.",
+        "Demonstrate the final program and explain its design and limitations."
+      ]
+    ],
+    "chapters": [
+      [
+        "Python Fundamentals",
+        [
+          "What Is Python and How It Works",
+          "Installing Python",
+          "Comments and print()",
+          "Variables",
+          "User input()",
+          "Python Data Types"
+        ]
+      ],
+      [
+        "Python Strings",
+        [
+          "String Basics and Transformations",
+          "Indexing and Slicing",
+          "Search, Validation, and Case Conversion"
+        ]
+      ],
+      [
+        "Python Numbers",
+        [
+          "Integers and Floats, Numeric Types, and Math",
+          "Rounding, Random Numbers, and Numeric Validation"
+        ]
+      ],
+      [
+        "Python Logic and Operators",
+        [
+          "Boolean Values",
+          "Comparison and Logical Operators",
+          "Membership and Identity Operators"
+        ]
+      ],
+      [
+        "Python Conditional Statements",
+        [
+          "If, Else, and Elif",
+          "Nested and Advanced Conditions",
+          "Inline If and Match Case"
+        ]
+      ],
+      [
+        "Python Loops",
+        [
+          "For Loops",
+          "Break, Continue, and Pass",
+          "For Else and Nested Loops",
+          "While Loops"
+        ]
+      ],
+      [
+        "Python Data Structures",
+        [
+          "Lists Overview",
+          "Creating and Accessing Lists",
+          "Unpacking and Analyzing Lists",
+          "Adding, Removing, and Updating Items",
+          "Sorting and Combining Lists",
+          "Iterables and Filtering",
+          "Lambda Expressions and List Comprehensions",
+          "Tuples",
+          "Sets",
+          "Dictionaries"
+        ]
+      ],
+      [
+        "Python Functions",
+        [
+          "Functions Introduction",
+          "Function Parameters and Return Values",
+          "Types of Python Functions",
+          "Writing Clean Functions"
+        ]
+      ]
+    ],
+    "slug": "python"
+  },
+  {
+    "title": "Power BI",
+    "level": "Beginner to intermediate",
+    "pre": "Spreadsheet familiarity; introductory SQL recommended.",
+    "tools": "Power BI Desktop on a supported Windows environment; sample datasets; optional Power BI service access.",
+    "desc": "Design business intelligence reports from source preparation through semantic modeling, DAX calculations, visual design, and controlled publishing. Students learn to make reports accurate, interpretable, and maintainable.",
+    "out": [
+      "Transform source data with Power Query and document quality checks.",
+      "Build a star schema with deliberate relationships and a date table.",
+      "Develop DAX measures and explain filter context.",
+      "Design accessible reports and configure appropriate sharing, refresh, and security."
+    ],
+    "cap": "Executive sales and profitability report",
+    "deliver": "Submit a PBIX file, source-to-model documentation, a measure dictionary, reconciled KPIs, role-security tests, and a report walkthrough. Demonstrate service features in an approved tenant where available.",
+    "modules": [
+      [
+        "BI foundations",
+        "Business questions, KPIs, report audiences, Desktop navigation.",
+        "Translate a stakeholder brief into report requirements."
+      ],
+      [
+        "Data connections",
+        "Excel, CSV, database sources, import and DirectQuery concepts.",
+        "Connect to sales sources and document refresh assumptions."
+      ],
+      [
+        "Power Query essentials",
+        "Types, filtering, splitting, replacements, missing values.",
+        "Create a repeatable customer-cleaning workflow."
+      ],
+      [
+        "Advanced preparation",
+        "Merge, append, pivot, unpivot, parameters, query folding concepts.",
+        "Combine monthly files and verify row counts."
+      ],
+      [
+        "Semantic modeling",
+        "Fact and dimension tables, grain, cardinality, filter direction.",
+        "Build a sales star schema and explain relationships."
+      ],
+      [
+        "DAX foundations",
+        "Measures versus columns, SUMX, DIVIDE, variables, context.",
+        "Create revenue, margin, and weighted calculations."
+      ],
+      [
+        "Time intelligence",
+        "Date tables, CALCULATE, prior-period and year-to-date measures.",
+        "Validate period comparisons against independent totals."
+      ],
+      [
+        "Midpoint practical",
+        "Data preparation, model review and KPI reconciliation.",
+        "Deliver a working model with tested core measures."
+      ],
+      [
+        "Visual design",
+        "Chart choice, layout, labels, color, accessible design.",
+        "Build an executive summary page with clear hierarchy."
+      ],
+      [
+        "Report interaction",
+        "Slicers, drill-through, tooltips, bookmarks, navigation.",
+        "Create a guided route from summary to customer detail."
+      ],
+      [
+        "Analytical reporting",
+        "Variance, segmentation, distributions, defensible storytelling.",
+        "Explain sales drivers without unsupported causal claims."
+      ],
+      [
+        "Service and collaboration",
+        "Workspaces, apps, publishing, permissions and license implications.",
+        "Demonstrate a controlled publishing workflow."
+      ],
+      [
+        "Refresh and security",
+        "Gateway concepts, scheduled refresh, row-level security, testing.",
+        "Test role access and produce a refresh checklist."
+      ],
+      [
+        "Performance and governance",
+        "Performance Analyzer, model size, measure optimization, ownership.",
+        "Diagnose slow visuals and document a measured improvement."
+      ],
+      [
+        "Capstone build",
+        "Stakeholder feedback, reconciliation, documentation and usability.",
+        "Resolve review findings and finalize the report."
+      ],
+      [
+        "Capstone presentation",
+        "Business narrative, live walkthrough, security and maintenance.",
+        "Present recommendations supported by verified KPIs."
+      ]
+    ],
+    "slug": "power-bi"
+  },
+  {
+    "title": "Azure Data Factory",
+    "level": "Intermediate",
+    "pre": "SQL and Python fundamentals; relational modeling; basic cloud concepts.",
+    "tools": "Azure Data Factory; Azure Storage or ADLS Gen2; Azure SQL; Key Vault; Git integration; approved Azure lab subscription.",
+    "desc": "Create reliable data integration pipelines with Azure Data Factory. The course emphasizes ingestion, parameterization, orchestration, incremental loads, monitoring, security, and operational handover, with a short comparison to Fabric Data Factory.",
+    "out": [
+      "Configure linked services, datasets, activities, and integration runtimes.",
+      "Build metadata-driven pipelines with controlled parameters and triggers.",
+      "Implement incremental processing, validation, retries, and operational logging.",
+      "Apply managed identity, secret management, deployment practices, and cost monitoring."
+    ],
+    "cap": "Incremental sales ingestion and reporting pipeline",
+    "deliver": "Submit pipeline definitions, architecture diagram, parameter and metadata design, watermark logic, rerun tests, monitoring evidence, deployment notes, and a recovery runbook.",
+    "modules": [
+      [
+        "Integration architecture",
+        "ETL and ELT, ADF objects, source and sink patterns, Fabric context.",
+        "Design a source-to-reporting integration architecture."
+      ],
+      [
+        "Secure setup",
+        "Resource groups, storage, access control, managed identities, budgets.",
+        "Provision a scoped lab and verify minimal required access."
+      ],
+      [
+        "Connections and runtimes",
+        "Linked services, datasets, Azure and self-hosted runtimes.",
+        "Connect to approved storage and database sources."
+      ],
+      [
+        "Copy activity",
+        "Mappings, formats, partitioning concepts, throughput and validation.",
+        "Copy CSV data to SQL and reconcile counts."
+      ],
+      [
+        "Parameters and expressions",
+        "Pipeline and dataset parameters, variables, dynamic content.",
+        "Reuse one pipeline across several source tables."
+      ],
+      [
+        "Control flow",
+        "Lookup, ForEach, If Condition, dependencies and execution order.",
+        "Orchestrate a metadata-driven ingestion workflow."
+      ],
+      [
+        "Triggers",
+        "Schedule, tumbling window, event triggers and time dependencies.",
+        "Compare trigger choices for a daily ingestion job."
+      ],
+      [
+        "Midpoint practical",
+        "Parameterized ingestion and dependency troubleshooting.",
+        "Deliver an independently tested multi-source pipeline."
+      ],
+      [
+        "Transformation options",
+        "SQL pushdown, notebooks, Mapping Data Flows and compute tradeoffs.",
+        "Implement and justify a transformation approach."
+      ],
+      [
+        "Incremental loads",
+        "Watermarks, late arrivals, upserts, change-data concepts.",
+        "Load only changed records and prevent duplicate writes."
+      ],
+      [
+        "Data quality and failures",
+        "Validation rules, quarantines, retry policies, timeout handling.",
+        "Inject bad data and verify an auditable failure path."
+      ],
+      [
+        "Monitoring and operations",
+        "Activity output, alerts, logs, run history and diagnostics.",
+        "Build an operations checklist and investigate a failed run."
+      ],
+      [
+        "Deployment",
+        "Git workflow, environment configuration, deployment artifacts, secrets.",
+        "Promote a pipeline using environment-specific configuration."
+      ],
+      [
+        "Security and cost",
+        "Key Vault, network considerations, access reviews and cost drivers.",
+        "Review permissions and estimate costs from measured usage."
+      ],
+      [
+        "Capstone build",
+        "Integration tests, idempotency, backfills, operational documentation.",
+        "Demonstrate safe reruns and historical reloads."
+      ],
+      [
+        "Capstone presentation",
+        "Architecture defense, recovery demonstration and handover.",
+        "Show successful incremental processing and failure recovery."
+      ]
+    ],
+    "slug": "azure-data-factory"
+  },
+  {
+    "title": "Data Engineering",
+    "level": "Intermediate",
+    "pre": "SQL and Python proficiency; basic Git and database design.",
+    "tools": "Python; PostgreSQL or SQL Server; Apache Spark or an approved notebook environment; Airflow or equivalent scheduler; Docker where available; Git.",
+    "desc": "Design and operate data pipelines that support trustworthy analytics. Students learn storage design, batch processing, distributed computation, orchestration, data quality, observability, and practical production delivery.",
+    "out": [
+      "Design data models and storage layers around workload and business requirements.",
+      "Build incremental, idempotent batch pipelines with validation and orchestration.",
+      "Process data using Spark and explain basic partition and shuffle behavior.",
+      "Document lineage, monitor failures, and deliver a recoverable data product."
+    ],
+    "cap": "Retail analytics data platform",
+    "deliver": "Submit ingestion code, warehouse schema, transformation jobs, scheduler definitions, quality tests, lineage diagram, monitoring evidence, and an operating runbook.",
+    "modules": [
+      [
+        "Engineering foundations",
+        "Data lifecycle, roles, system boundaries, SLAs and requirements.",
+        "Translate a retail case into a pipeline specification."
+      ],
+      [
+        "Storage and formats",
+        "Databases, object storage, CSV, JSON, Parquet, compression.",
+        "Compare formats and record storage tradeoffs."
+      ],
+      [
+        "Modeling",
+        "Normalization, dimensional models, fact grain, slowly changing dimensions.",
+        "Design a warehouse model with explicit historical rules."
+      ],
+      [
+        "Ingestion",
+        "Files, APIs, database extracts, pagination and schema changes.",
+        "Implement validated ingestion from two source types."
+      ],
+      [
+        "Reliable loading",
+        "Incremental loads, watermarks, deduplication, idempotency, late data.",
+        "Prove repeated runs do not duplicate business records."
+      ],
+      [
+        "Transformations",
+        "SQL and Python transforms, ELT, modularity, business definitions.",
+        "Create reusable transformations with reconciliation checks."
+      ],
+      [
+        "Data quality",
+        "Completeness, uniqueness, referential integrity and quarantine rules.",
+        "Build quality tests and capture failed-record evidence."
+      ],
+      [
+        "Midpoint practical",
+        "Ingestion, modeling and reliable processing.",
+        "Deliver a functioning local analytics pipeline."
+      ],
+      [
+        "Spark foundations",
+        "DataFrames, lazy evaluation, transformations and actions.",
+        "Process a dataset using Spark DataFrame operations."
+      ],
+      [
+        "Distributed performance",
+        "Partitions, shuffles, joins, skew, caching and measurement.",
+        "Diagnose a costly job and justify an optimization."
+      ],
+      [
+        "Orchestration",
+        "DAGs, schedules, dependencies, retries and backfills.",
+        "Schedule the pipeline and test a historical backfill."
+      ],
+      [
+        "Streaming concepts",
+        "Events, offsets, windows, delivery guarantees and reconciliation.",
+        "Simulate event processing and explain duplicate handling."
+      ],
+      [
+        "Lakehouse and cloud patterns",
+        "Layered storage, table formats, warehouse and lakehouse tradeoffs.",
+        "Propose a deployment architecture with clear boundaries."
+      ],
+      [
+        "Production operations",
+        "Observability, lineage, access controls, CI checks, recovery and cost.",
+        "Create monitoring checks and a failure-recovery runbook."
+      ],
+      [
+        "Capstone build",
+        "End-to-end integration, acceptance criteria and peer review.",
+        "Run the platform against normal and failure scenarios."
+      ],
+      [
+        "Capstone presentation",
+        "System demonstration, design defense and operating handover.",
+        "Demonstrate freshness, quality and recovery evidence."
+      ]
+    ],
+    "slug": "data-engineering"
+  },
+  {
+    "title": "AWS",
+    "level": "Beginner to intermediate",
+    "pre": "Basic networking and computer literacy; SQL and Python useful for data labs.",
+    "tools": "AWS console and CLI; IAM; S3; EC2; VPC; RDS; Lambda; CloudWatch; Glue; Athena; approved lab accounts.",
+    "desc": "Build a practical foundation in AWS cloud architecture with an emphasis on secure, observable, cost-aware data workloads. This broad course supports later specialization in architecture or data engineering.",
+    "out": [
+      "Explain cloud service models, AWS architecture concepts, and shared responsibility.",
+      "Configure scoped identity permissions, storage, networking, and compute.",
+      "Build a small analytics workflow using S3, Glue, and Athena.",
+      "Document reliability, monitoring, recovery, and cost decisions."
+    ],
+    "cap": "Secure cloud analytics environment",
+    "deliver": "Submit an architecture diagram, IAM design, reproducible deployment instructions, ingestion and query workflow, monitoring evidence, a cost estimate, and cleanup instructions.",
+    "modules": [
+      [
+        "Cloud foundations",
+        "Regions, Availability Zones, elasticity, service models, responsibility.",
+        "Map a business workload to cloud capabilities."
+      ],
+      [
+        "Identity and billing",
+        "IAM roles and policies, MFA, temporary access, budgets and tagging.",
+        "Configure scoped lab access and spending notifications."
+      ],
+      [
+        "Object storage",
+        "S3 objects, bucket access, encryption, lifecycle and versioning.",
+        "Create a secure data bucket and test access controls."
+      ],
+      [
+        "Networking",
+        "VPCs, subnets, route tables, security groups, public versus private access.",
+        "Draw and implement a minimal network design."
+      ],
+      [
+        "Compute",
+        "EC2, instance choices, EBS, scaling and operating responsibilities.",
+        "Deploy and monitor a small approved compute workload."
+      ],
+      [
+        "Databases",
+        "RDS fundamentals, relational versus key-value patterns, backups.",
+        "Connect an application or script to a managed database."
+      ],
+      [
+        "Serverless",
+        "Lambda, event triggers, permissions, limits and failure paths.",
+        "Validate an S3 event-driven processing function."
+      ],
+      [
+        "Midpoint practical",
+        "Storage, access, compute and architecture decisions.",
+        "Demonstrate a secure foundational cloud environment."
+      ],
+      [
+        "Monitoring",
+        "CloudWatch logs and metrics, alarms, CloudTrail audit concepts.",
+        "Detect and investigate a simulated application failure."
+      ],
+      [
+        "Data catalog and queries",
+        "Glue Data Catalog, crawlers, Athena, partitions and query costs.",
+        "Catalog Parquet data and run validated analytical queries."
+      ],
+      [
+        "Data processing",
+        "Glue jobs, transformations, schema handling and job monitoring.",
+        "Build a small source-to-curated processing job."
+      ],
+      [
+        "Reliable architecture",
+        "Failure modes, backup, recovery, availability and scaling tradeoffs.",
+        "Test recovery and document restoration steps."
+      ],
+      [
+        "Security and governance",
+        "KMS concepts, secrets, least privilege, audit and data classification.",
+        "Review the architecture against an access-control checklist."
+      ],
+      [
+        "Automation and costs",
+        "Infrastructure as code concepts, CLI scripts, right-sizing and cleanup.",
+        "Create a repeatable deployment and estimate usage costs."
+      ],
+      [
+        "Capstone build",
+        "Integration, validation, monitoring, budgets and documentation.",
+        "Run ingestion, transformation and analytics end to end."
+      ],
+      [
+        "Capstone presentation",
+        "Architecture defense, live query demonstration and handover.",
+        "Explain security, reliability and cost tradeoffs with evidence."
+      ]
+    ],
+    "slug": "aws"
+  },
+  {
+    "title": "AI and Machine Learning and Statistics",
+    "level": "Intermediate",
+    "pre": "Python and pandas proficiency; algebra; basic SQL recommended.",
+    "tools": "Python; JupyterLab; NumPy; pandas; SciPy; scikit-learn; matplotlib; optional TensorFlow or PyTorch; Git.",
+    "desc": "Apply statistical reasoning and machine learning to a defined business problem. Students build baselines, prevent data leakage, evaluate models, communicate uncertainty, and examine responsible use. Deep learning and generative AI are introductory extensions.",
+    "out": [
+      "Use descriptive statistics, probability, inference, and regression with appropriate assumptions.",
+      "Prepare data and create leakage-safe training and validation pipelines.",
+      "Compare supervised and unsupervised methods with suitable evaluation metrics.",
+      "Communicate model limitations, fairness concerns, deployment needs, and monitoring plans."
+    ],
+    "cap": "Customer churn prediction and decision support",
+    "deliver": "Submit a reproducible notebook and pipeline, a baseline comparison, validation results, threshold analysis, model card, deployment demonstration, and business recommendations.",
+    "modules": [
+      [
+        "AI and statistical reasoning",
+        "AI, ML and generative AI distinctions; problem framing; sample and population.",
+        "Define a prediction target, stakeholders and measurable success criteria."
+      ],
+      [
+        "Descriptive statistics",
+        "Center, spread, distributions, missingness and exploratory plots.",
+        "Profile a dataset and identify quality and sampling concerns."
+      ],
+      [
+        "Probability and sampling",
+        "Conditional probability, Bayes intuition, sampling bias, random variables.",
+        "Simulate sampling variability and interpret probability statements."
+      ],
+      [
+        "Statistical inference",
+        "Confidence intervals, hypothesis tests, effect sizes and assumptions.",
+        "Analyze an experiment and distinguish significance from practical value."
+      ],
+      [
+        "Regression foundations",
+        "Linear regression, residuals, assumptions, regularization concepts.",
+        "Fit and diagnose a regression baseline."
+      ],
+      [
+        "Data preparation",
+        "Splits, leakage, imputation, encoding, scaling and feature engineering.",
+        "Build a preprocessing pipeline fitted only on training data."
+      ],
+      [
+        "Classification",
+        "Logistic regression, confusion matrices, precision, recall, ROC and PR.",
+        "Evaluate a classifier under imbalanced outcomes."
+      ],
+      [
+        "Midpoint practical",
+        "Statistics, preprocessing, baseline modeling and validation.",
+        "Deliver a defensible baseline with leakage checks."
+      ],
+      [
+        "Tree models",
+        "Decision trees, random forests, boosting, complexity and overfitting.",
+        "Compare models using the same validation protocol."
+      ],
+      [
+        "Model selection",
+        "Cross-validation, hyperparameter search, learning curves, nested concepts.",
+        "Tune a model while preserving an untouched final test set."
+      ],
+      [
+        "Unsupervised learning",
+        "Clustering, scaling, PCA, interpretation and limits.",
+        "Create customer segments and assess their usefulness."
+      ],
+      [
+        "Neural networks",
+        "Network structure, loss, optimization, regularization and training curves.",
+        "Train a small network and compare it with simpler baselines."
+      ],
+      [
+        "Generative AI foundations",
+        "Tokens, embeddings, prompting, retrieval concepts, factuality evaluation.",
+        "Build a small retrieval demo and test unsupported answers."
+      ],
+      [
+        "Responsible deployment",
+        "Explainability, subgroup checks, privacy, model cards, drift and monitoring.",
+        "Create a model card and serve a simple prediction interface."
+      ],
+      [
+        "Capstone build",
+        "Error analysis, thresholds, business costs and reproducibility.",
+        "Finalize the pipeline and document decision tradeoffs."
+      ],
+      [
+        "Capstone presentation",
+        "Statistical interpretation, model demonstration and limitations.",
+        "Defend evaluation choices and present a monitoring plan."
+      ]
+    ],
+    "slug": "ai-and-machine-learning-and-statistics"
+  },
+  {
+    "title": "Certificate Based Courses",
+    "level": "Varies by selected credential",
+    "pre": "Entry requirements depend on the route. Complete the related technical course or pass a practical placement assessment before joining an associate-level route.",
+    "tools": "Official Microsoft Learn or AWS learning resources; vendor practice assessments; approved lab environments; instructor-created original exercises.",
+    "desc": "Prepare students for one selected vendor credential through objective mapping, applied labs, knowledge checks, scenario reasoning, and targeted revision. Each cohort follows one credential route rather than attempting all credentials simultaneously.",
+    "out": [
+      "Map personal skills and learning gaps to the selected official exam objectives.",
+      "Complete practical scenarios demonstrating the skills behind exam questions.",
+      "Explain architectural or analytical choices and eliminate unsuitable alternatives.",
+      "Create an evidence-based readiness plan using practice results and demonstrated skills."
+    ],
+    "cap": "Credential aligned practical portfolio and readiness review",
+    "deliver": "Submit an objective-to-evidence matrix, lab portfolio, error log, two original timed mock assessments, targeted revision plan, and practical demonstration. Vendor exam registration and fees are separate.",
+    "modules": [
+      [
+        "Orientation and diagnostic",
+        "Choose one credential; review current objectives, format and policies.",
+        "Complete a diagnostic and create a personal learning plan."
+      ],
+      [
+        "Domain one foundations",
+        "Core concepts and terminology for the selected route.",
+        "Map foundational concepts to an applied scenario."
+      ],
+      [
+        "Domain one practice",
+        "Configuration, use cases and common misconceptions.",
+        "Complete a graded foundational lab."
+      ],
+      [
+        "Domain two foundations",
+        "Second objective group and dependencies.",
+        "Explain a design or analytical decision from a scenario."
+      ],
+      [
+        "Domain two practice",
+        "Implementation, testing and troubleshooting.",
+        "Complete a second graded lab with evidence."
+      ],
+      [
+        "Domain three foundations",
+        "Third objective group and integration points.",
+        "Build a concept map linked to official objectives."
+      ],
+      [
+        "Domain three practice",
+        "Multi-step scenarios and performance or quality tradeoffs.",
+        "Complete an integrated lab and defend choices."
+      ],
+      [
+        "Midpoint readiness review",
+        "Objective coverage, cumulative practical and gap analysis.",
+        "Update the learning plan using demonstrated weaknesses."
+      ],
+      [
+        "Remaining objective groups",
+        "Route-specific objectives not yet covered; security and governance.",
+        "Complete missing objective labs."
+      ],
+      [
+        "Integrated scenarios",
+        "Cross-domain architecture, modeling or pipeline reasoning.",
+        "Resolve a realistic end-to-end case."
+      ],
+      [
+        "Troubleshooting and operations",
+        "Failure diagnosis, monitoring, access and lifecycle management.",
+        "Investigate a broken configuration or analytical workflow."
+      ],
+      [
+        "Practical portfolio",
+        "Consolidate evidence and document repeatable steps.",
+        "Submit a complete objective-to-evidence matrix."
+      ],
+      [
+        "Timed mock one",
+        "Original questions, scenario pacing and answer justification.",
+        "Record domain-level results and categorize mistakes."
+      ],
+      [
+        "Targeted remediation",
+        "Weak domains, repeated misconceptions and skills reinforcement.",
+        "Retest missed skills with new questions and labs."
+      ],
+      [
+        "Timed mock two",
+        "Fresh original assessment and practical readiness review.",
+        "Compare results and justify an exam readiness decision."
+      ],
+      [
+        "Final readiness and next steps",
+        "Revision plan, registration steps and continued learning.",
+        "Present the portfolio and personal exam preparation plan."
+      ]
+    ],
+    "slug": "certificate-based-courses"
+  }
+]
